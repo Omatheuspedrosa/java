@@ -15,13 +15,7 @@ public class Exercicio01 {
 		
 		int[] vetor = {2, 5, 1, 3, 4, 9, 7, 8, 10, 6};
 		int n;
-<<<<<<< HEAD
 		boolean encontrado = false;
-		
-=======
-		
-		Arrays.sort(vetor);
->>>>>>> 5965b863623a21c909d5fcf7c86e333bd6bf4bdf
 		
 		for(int indice = 0; indice < 10; indice ++) {
 			System.out.println("Indice " + indice + ": " + vetor[indice]);
@@ -29,8 +23,6 @@ public class Exercicio01 {
 				
 		System.out.print("Digite o número que você deseja encontrar: ");
 		n = leia.nextInt();
-		
-<<<<<<< HEAD
 		
 		for (int indice = 0; indice < 10; indice ++) {
 			if (vetor[indice] == n) {
@@ -41,17 +33,18 @@ public class Exercicio01 {
 		}
 		if (!encontrado) {
 			System.out.println("O número " + n + " não foi encontrado!");
-=======
+
 		int posicao =  Arrays.binarySearch(vetor, n);
 		
 		if(posicao < 0) {
 			System.out.println("O número " + n + " não foi localizado!");
 		}else {
 			System.out.println("O número " + n + " está localizado na posição: " + posicao);
->>>>>>> 5965b863623a21c909d5fcf7c86e333bd6bf4bdf
+
 		}
 
 		
 	}
 
+	}
 }
